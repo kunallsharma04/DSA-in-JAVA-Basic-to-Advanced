@@ -4,6 +4,7 @@ public class variables {
         int b = 5;
         System.out.println(a);
         System.out.println(b);  
+        
         // single character only
         String name = "Tony Stark";
         System.out.println(name);
