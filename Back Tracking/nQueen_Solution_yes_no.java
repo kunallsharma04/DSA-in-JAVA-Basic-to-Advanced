@@ -57,11 +57,6 @@ public class nQueen_Solution_yes_no {
         // we need to check is there any queen we have set above that can come in
         // killing area
 
-        // verticall above cheking
-        /*
-         * we just take for loop going up therfore same coloum but row -1 in each loop
-         */
-
         for (int i = row - 1; i >= 0; i--) {
             if (board[i][col] == 'Q') {
                 return false;
@@ -77,8 +72,6 @@ public class nQueen_Solution_yes_no {
 
         }
 
-        // right digonaly above
-        /* going up by one step and right by one step */
 
         for (int i = row - 1, j = col + 1; i >= 0 && j < board.length; i--, j++) {
             if (board[i][j] == 'Q') {
